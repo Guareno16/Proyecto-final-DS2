@@ -29,6 +29,7 @@ namespace Proyecto_final
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservacion));
             this.label1 = new System.Windows.Forms.Label();
             this.DestinoCombox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,10 +68,10 @@ namespace Proyecto_final
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 26);
+            this.label1.Size = new System.Drawing.Size(83, 26);
             this.label1.TabIndex = 19;
             this.label1.Tag = "";
-            this.label1.Text = "Origen";
+            this.label1.Text = "Origen:";
             // 
             // DestinoCombox
             // 
@@ -86,10 +87,10 @@ namespace Proyecto_final
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(348, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 26);
+            this.label2.Size = new System.Drawing.Size(92, 26);
             this.label2.TabIndex = 21;
             this.label2.Tag = "";
-            this.label2.Text = "Destino";
+            this.label2.Text = "Destino:";
             // 
             // dataGridView1
             // 
@@ -341,7 +342,8 @@ namespace Proyecto_final
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1553, 805);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.txtTELEFCLIENTE);
             this.Controls.Add(this.button3);
@@ -371,6 +373,7 @@ namespace Proyecto_final
             this.Controls.Add(this.DestinoCombox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Reservacion";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

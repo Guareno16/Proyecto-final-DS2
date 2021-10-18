@@ -29,6 +29,7 @@ namespace Proyecto_final
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buscar_Cliente));
             this.txtUsuario = new System.Windows.Forms.Label();
             this.txtUsuarioBuscador = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -67,10 +68,12 @@ namespace Proyecto_final
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(946, 643);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtUsuarioBuscador);
             this.Controls.Add(this.txtUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Buscar_Cliente";
             this.Text = "Buscar_Cliente";

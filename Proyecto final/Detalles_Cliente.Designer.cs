@@ -29,6 +29,7 @@ namespace Proyecto_final
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Detalles_Cliente));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -44,12 +45,14 @@ namespace Proyecto_final
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BotonActualizar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Californian FB", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(305, 32);
+            this.label3.Location = new System.Drawing.Point(320, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 30);
             this.label3.TabIndex = 6;
@@ -60,7 +63,7 @@ namespace Proyecto_final
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 99);
+            this.label2.Location = new System.Drawing.Point(84, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 26);
             this.label2.TabIndex = 7;
@@ -69,14 +72,14 @@ namespace Proyecto_final
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(355, 105);
+            this.txtNombre.Location = new System.Drawing.Point(354, 170);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(306, 20);
             this.txtNombre.TabIndex = 8;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(355, 152);
+            this.txtApellido.Location = new System.Drawing.Point(354, 217);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(306, 20);
             this.txtApellido.TabIndex = 10;
@@ -85,7 +88,7 @@ namespace Proyecto_final
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 146);
+            this.label1.Location = new System.Drawing.Point(84, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 26);
             this.label1.TabIndex = 9;
@@ -96,7 +99,7 @@ namespace Proyecto_final
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(85, 194);
+            this.label4.Location = new System.Drawing.Point(84, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 26);
             this.label4.TabIndex = 11;
@@ -105,7 +108,7 @@ namespace Proyecto_final
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(355, 246);
+            this.txtEmail.Location = new System.Drawing.Point(354, 311);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(306, 20);
             this.txtEmail.TabIndex = 14;
@@ -114,7 +117,7 @@ namespace Proyecto_final
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(85, 240);
+            this.label5.Location = new System.Drawing.Point(84, 305);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 26);
             this.label5.TabIndex = 13;
@@ -123,7 +126,7 @@ namespace Proyecto_final
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(355, 352);
+            this.txtDireccion.Location = new System.Drawing.Point(354, 417);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(306, 76);
@@ -133,7 +136,7 @@ namespace Proyecto_final
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(85, 346);
+            this.label6.Location = new System.Drawing.Point(84, 411);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 26);
             this.label6.TabIndex = 15;
@@ -142,7 +145,7 @@ namespace Proyecto_final
             // 
             // BotonGuardar
             // 
-            this.BotonGuardar.Location = new System.Drawing.Point(577, 434);
+            this.BotonGuardar.Location = new System.Drawing.Point(576, 499);
             this.BotonGuardar.Name = "BotonGuardar";
             this.BotonGuardar.Size = new System.Drawing.Size(84, 23);
             this.BotonGuardar.TabIndex = 17;
@@ -152,14 +155,14 @@ namespace Proyecto_final
             // 
             // txtNacimiento
             // 
-            this.txtNacimiento.Location = new System.Drawing.Point(355, 194);
+            this.txtNacimiento.Location = new System.Drawing.Point(354, 259);
             this.txtNacimiento.Name = "txtNacimiento";
             this.txtNacimiento.Size = new System.Drawing.Size(306, 20);
             this.txtNacimiento.TabIndex = 18;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(355, 298);
+            this.txtTelefono.Location = new System.Drawing.Point(354, 363);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(306, 20);
             this.txtTelefono.TabIndex = 20;
@@ -168,7 +171,7 @@ namespace Proyecto_final
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(85, 292);
+            this.label7.Location = new System.Drawing.Point(84, 357);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 26);
             this.label7.TabIndex = 19;
@@ -177,7 +180,7 @@ namespace Proyecto_final
             // 
             // BotonActualizar
             // 
-            this.BotonActualizar.Location = new System.Drawing.Point(477, 434);
+            this.BotonActualizar.Location = new System.Drawing.Point(476, 499);
             this.BotonActualizar.Name = "BotonActualizar";
             this.BotonActualizar.Size = new System.Drawing.Size(94, 23);
             this.BotonActualizar.TabIndex = 21;
@@ -185,11 +188,23 @@ namespace Proyecto_final
             this.BotonActualizar.UseVisualStyleBackColor = true;
             this.BotonActualizar.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_final.Properties.Resources.administrador;
+            this.pictureBox1.Location = new System.Drawing.Point(276, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // Detalles_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(873, 565);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BotonActualizar);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label7);
@@ -205,8 +220,10 @@ namespace Proyecto_final
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Detalles_Cliente";
             this.Text = "Detalles_Cliente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +245,6 @@ namespace Proyecto_final
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button BotonActualizar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
